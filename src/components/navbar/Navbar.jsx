@@ -15,7 +15,7 @@ const Navbar = () => {
         <Image src="/youtube.png" alt="youtube" width={24} height={24} />
       </div> */}
 
-      <div className={styles.logo}>radan-rocks</div>
+      <div className={styles.logo}>radan_rocks</div>
       <div className={styles.links}>
         <ThemeToggle />
         <Link href='/' className={styles.link}>
