@@ -16,6 +16,12 @@ const getData = async slug => {
   return res.json();
 };
 
+export async function generateStaticParams() {
+  return data.map(post => ({
+    slug: post.slug,
+  }));
+}
+
 const SinglePage = async ({ params }) => {
   const { slug } = params;
   // console.log('datadata:', data);
