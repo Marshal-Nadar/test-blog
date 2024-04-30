@@ -12,7 +12,7 @@ const About = () => {
       <aside className={styles.letstalk}>
         <h1 className={styles.weareText}>Let&apos;s talk.</h1>
         <h2>Share your excitement with us.</h2>
-        <h3>radan_blog@gmail.com</h3>
+        <h3>radan_rocks@gmail.com</h3>
       </aside>
     </section>
   );

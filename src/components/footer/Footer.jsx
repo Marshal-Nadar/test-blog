@@ -10,7 +10,7 @@ const Footer = () => {
         <div className={styles.info}>
           <div className={styles.logo}>
             {/* <Image src='/logo.png' alt='lama blog' width={50} height={50} /> */}
-            <h1 className={styles.logoText}>radan_blog</h1>
+            <h1 className={styles.logoText}>radan_rocks</h1>
           </div>
           {/* <p className={styles.desc}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
       </div>
       <p className={styles.copyrights}>
-        Built with ❤️ © 2024 by radan_blog. All rights reserved.
+        Built with ❤️ © 2024 by radan_rocks. All rights reserved.
       </p>
     </footer>
   );
