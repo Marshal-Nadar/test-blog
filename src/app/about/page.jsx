@@ -17,10 +17,17 @@ const About = () => {
             {`I'm not just your average software developer — I'm a digital explorer, a code wizard, and a master of turning caffeine into code! 🚀 `}
           </p>
           <p className={styles.postDesc}>
-            {`But life as a developer isn't all about squashing bugs. When I'm not hunting down pesky bugs, you'll catch me exploring the city, gardening in my backyard. I'm great at juggling tasks and having fun!
-`}
+            I'm a full-stack software developer with over five years of
+            experience crafting innovative web applications. I leverage my
+            expertise in <em className={styles.emphasized}>ReactJS</em>,{' '}
+            <em className={styles.emphasized}>NodeJS</em>, and both
+            <em className={styles.emphasized}>SQL</em>
+            and <em className={styles.emphasized}>NoSQL</em> databases to bring
+            my clients' visions to life.
           </p>
-          {/* <button className={styles.button}>Read More</button> */}
+          <p className={styles.postDesc}>
+            {`But life as a developer isn't all about squashing bugs. When I'm not hunting down pesky bugs, you'll find me on the badminton court, deeply focused on the chessboard, plotting my next move.`}
+          </p>
         </div>
       </div>
     </div>
