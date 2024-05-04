@@ -29,12 +29,22 @@ a {
 }
 
 .light {
-  --bg: white;
+  --bg: #fbfbfb;
   --textColor: black;
   --softBg: #f0f0f0;
   --softTextColor: #626262;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #94a778;
+}
+
+::selection {
+  color: white;
+  background: #94a778;
+}
 .container {
   min-height: 100vh;
   background-color: var(--bg);
@@ -45,8 +55,8 @@ a {
   max-width: 1536px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 @media screen and (max-width: 1536px) {
@@ -62,8 +72,8 @@ a {
 @media screen and (max-width: 1024px) {
   .wrapper {
     max-width: 768px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -76,11 +86,16 @@ a {
     max-width: 475px;
   }
 }
+@media screen and (min-width: 325px) and (max-width: 500px) {
+  .wrapper {
+    max-width: 400px;
+  }
+}
 
-.ql-container{
+.ql-container {
   font-size: 28px !important;
 }
 
-.quill > .ql-container > .ql-editor.ql-blank::before{
+.quill > .ql-container > .ql-editor.ql-blank::before {
   color: #b3b3b1;
 }

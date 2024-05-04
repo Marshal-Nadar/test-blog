@@ -10,7 +10,7 @@ const Footer = () => {
         <div className={styles.info}>
           <div className={styles.logo}>
             {/* <Image src='/logo.png' alt='lama blog' width={50} height={50} /> */}
-            <h1 className={styles.logoText}>radan_rocks</h1>
+            <h1 className={styles.logoText}>marshal dev</h1>
           </div>
           {/* <p className={styles.desc}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -19,11 +19,50 @@ const Footer = () => {
           repellendus dorales.
         </p> */}
           <div className={styles.icons}>
-            <Image src='/facebook2x.png' alt='' width={20} height={20} />
-            <Image src='/instagram2x.png' alt='' width={20} height={20} />
-            {/* <Image src='/tiktok.png' alt='' width={20} height={20} /> */}
-            <Image src='/youtube2x.png' alt='' width={20} height={20} />
-            <Image src='/linkedIn2x.png' alt='' width={20} height={20} />
+            <Link
+              href='mailto:marshalnadarmn18@gmail.com'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              <Image src='/gmail.ico' alt='gmail' width={20} height={20} />
+            </Link>
+            <Link
+              href='https://www.linkedin.com/in/marshal-nadar'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              <Image
+                src='/linkedIn2x.png'
+                alt='linkedIn'
+                width={20}
+                height={20}
+              />{' '}
+            </Link>
+            <Link
+              href='https://www.linkedin.com/in/marshal-nadar'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              <Image
+                src='/facebook2x.png'
+                alt='facebook'
+                width={20}
+                height={20}
+              />
+            </Link>
+
+            <Link
+              href='https://www.linkedin.com/in/marshal-nadar'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              <Image
+                src='/youtube2x.png'
+                alt='youtube'
+                width={20}
+                height={20}
+              />
+            </Link>
           </div>
         </div>
         <div className={styles.links}>
@@ -34,7 +73,7 @@ const Footer = () => {
             <Link href='/'>About</Link>
             <Link href='/'>Contact</Link>
           </div> */}
-          <div className={styles.list}>
+          {/* <div className={styles.list}>
             <span className={styles.listTitle}>Tags</span>
             <div className={styles.taglist}>
               <Link href='/'>Coding</Link>
@@ -42,7 +81,7 @@ const Footer = () => {
               <Link href='/'>Books</Link>
               <Link href='/'>Travel</Link>
             </div>
-          </div>
+          </div> */}
           {/* <div className={styles.list}>
             <span className={styles.listTitle}>Social</span>
             <Link href='/'>Facebook</Link>
@@ -53,7 +92,7 @@ const Footer = () => {
         </div>
       </div>
       <p className={styles.copyrights}>
-        Built with ❤️ © 2024 by radan_rocks. All rights reserved.
+        Built with ❤️ © 2024 by marshal.dev. All rights reserved.
       </p>
     </footer>
   );
