@@ -1,3 +1,2 @@
 [build]
-  command = "npm run build && next build && next export"
-  publish = "/opt/build/repo/.next"
+  base = "project/"
