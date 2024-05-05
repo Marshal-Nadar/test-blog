@@ -1,7 +1,8 @@
-import React from 'react';
+'use client';
 import styles from './footer.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import { sendGAEvent } from '@next/third-parties/google';
 
 const Footer = () => {
   return (
@@ -23,6 +24,9 @@ const Footer = () => {
               href='mailto:marshalnadarmn18@gmail.com'
               rel='noopener noreferrer'
               target='_blank'
+              onClick={() =>
+                sendGAEvent({ event: 'buttonClicked', value: 'gmail' })
+              }
             >
               <Image src='/gmail.ico' alt='gmail' width={20} height={20} />
             </Link>
@@ -30,6 +34,9 @@ const Footer = () => {
               href='https://www.linkedin.com/in/marshal-nadar'
               rel='noopener noreferrer'
               target='_blank'
+              onClick={() =>
+                sendGAEvent({ event: 'buttonClicked', value: 'linkedin' })
+              }
             >
               <Image
                 src='/linkedIn2x.png'
@@ -42,6 +49,9 @@ const Footer = () => {
               href='https://www.linkedin.com/in/marshal-nadar'
               rel='noopener noreferrer'
               target='_blank'
+              onClick={() =>
+                sendGAEvent({ event: 'buttonClicked', value: 'facebook' })
+              }
             >
               <Image
                 src='/facebook2x.png'
@@ -55,6 +65,9 @@ const Footer = () => {
               href='https://www.linkedin.com/in/marshal-nadar'
               rel='noopener noreferrer'
               target='_blank'
+              onClick={() =>
+                sendGAEvent({ event: 'buttonClicked', value: 'youtube' })
+              }
             >
               <Image
                 src='/youtube2x.png'

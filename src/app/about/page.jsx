@@ -1,6 +1,12 @@
 import React from 'react';
 import styles from './about.module.css';
 import Image from 'next/image';
+import Head from 'next/head';
+
+export const metadata = {
+  title: 'About',
+  description: 'The best blog app!',
+};
 
 const About = () => {
   return (

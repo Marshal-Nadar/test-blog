@@ -11,7 +11,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 const inter = Quicksand({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Marshal Dev',
+  title: 'Home',
   description: 'The best blog app!',
 };
 
@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <Head>
+        <title>My page title</title>
         <Link rel='icon' href='/favicon.ico'></Link>
       </Head>
       <body className={inter.className}>
