@@ -9,6 +9,7 @@ const Featured = () => {
         <b>Hey, marshal dev here!</b> Discover my stories and creative ideas.
         {/* <hr className={styles.hr} /> */}
       </h1>
+      <hr className={styles.hr} />
     </div>
   );
 };
