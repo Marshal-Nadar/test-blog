@@ -2,7 +2,7 @@
 import styles from './footer.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import { sendGAEvent } from '@next/third-parties/google';
+import { trackGAEvent } from '@/utils/google-analytics';
 
 const Footer = () => {
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
               rel='noopener noreferrer'
               target='_blank'
               onClick={() =>
-                sendGAEvent({ event: 'buttonClicked', value: 'gmail' })
+                trackGAEvent('Button Clicks', 'Gmail Button Click', 'Footer')
               }
             >
               <Image src='/gmail.ico' alt='gmail' width={20} height={20} />
@@ -35,7 +35,7 @@ const Footer = () => {
               rel='noopener noreferrer'
               target='_blank'
               onClick={() =>
-                sendGAEvent({ event: 'buttonClicked', value: 'linkedin' })
+                trackGAEvent('Button Clicks', 'Linkedin Button Click', 'Footer')
               }
             >
               <Image
@@ -50,7 +50,7 @@ const Footer = () => {
               rel='noopener noreferrer'
               target='_blank'
               onClick={() =>
-                sendGAEvent({ event: 'buttonClicked', value: 'facebook' })
+                trackGAEvent('Button Clicks', 'Facebook Button Click', 'Footer')
               }
             >
               <Image
@@ -66,7 +66,7 @@ const Footer = () => {
               rel='noopener noreferrer'
               target='_blank'
               onClick={() =>
-                sendGAEvent({ event: 'buttonClicked', value: 'youtube' })
+                trackGAEvent('Button Clicks', 'Youtube Button Click', 'Footer')
               }
             >
               <Image

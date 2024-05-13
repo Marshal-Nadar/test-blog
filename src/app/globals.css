@@ -38,12 +38,12 @@ a {
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
-  background: #94a778;
+  background: #81c389;
 }
 
 ::selection {
   color: white;
-  background: #94a778;
+  background: #81c389;
 }
 .container {
   min-height: 100vh;
