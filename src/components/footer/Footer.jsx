@@ -11,7 +11,7 @@ const Footer = () => {
         <div className={styles.info}>
           <div className={styles.logo}>
             {/* <Image src='/logo.png' alt='lama blog' width={50} height={50} /> */}
-            <h1 className={styles.logoText}>marshal dev</h1>
+            <h1 className={styles.logoText}>radan dev</h1>
           </div>
           {/* <p className={styles.desc}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -105,7 +105,7 @@ const Footer = () => {
         </div>
       </div>
       <p className={styles.copyrights}>
-        Built with ❤️ © 2024 by marshal.dev. All rights reserved.
+        Built with ❤️ © 2024 by radan.dev. All rights reserved.
       </p>
     </footer>
   );
