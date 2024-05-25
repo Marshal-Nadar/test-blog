@@ -1,9 +1,16 @@
 'use client';
-
+import { useEffect } from 'react';
+import { trackGAEvent } from '@/utils/google-analytics';
 import styles from './AdBlockNotice.module.css';
 
 const AdBlockNotice = () => {
-  console.log('fsss');
+  const handleAdblock = () => {
+    trackGAEvent('Button Clicks', 'Adblock Button Click', 'AdBlockNotice');
+    setTimeout(() => {
+      window.location.reload();
+    }, 400);
+  };
+
   return (
     <div className={styles.adBlockNotice}>
       <div className={styles.modalContent}>
@@ -16,16 +23,11 @@ const AdBlockNotice = () => {
               browser.
             </p>
             <p className={styles.messageText}>
-              Our website relies on ad revenue to provide free content to our
-              visitors. Please consider supporting us by disabling your ad
-              blocker.
+              Please consider supporting us by disabling your ad blocker.
             </p>
           </section>
         </div>
-        <div
-          className={styles.refreshButton}
-          onClick={() => window.location.reload()} // Use window.location.reload()
-        >
+        <div className={styles.refreshButton} onClick={() => handleAdblock()}>
           Refresh Page
         </div>
       </div>
