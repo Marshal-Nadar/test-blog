@@ -12,8 +12,9 @@ import AdblockProvider from '@/providers/AdblockProvider';
 const inter = Quicksand({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Home',
-  description: 'The best blog app!',
+  title: 'Home Page | Radandev',
+  description:
+    'The best blog site for developers who wants improve their career.',
 };
 
 export default function RootLayout({ children }) {

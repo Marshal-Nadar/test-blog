@@ -14,19 +14,28 @@ const getFromLocalStorage = () => {
 export const AdblockContextProvider = ({ children }) => {
   const [adblock, setAdblock] = useState(false);
 
-  const googleAdUrl =
+  const REQUEST_URL =
     'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
 
-  const detectAdBlock = async () => {
-    try {
-      await fetch(new Request(googleAdUrl));
-    } catch (error) {
-      setAdblock(true);
-    }
+  const REQUEST_CONFIG = {
+    method: 'HEAD',
+    mode: 'no-cors',
+  };
+
+  const checkAdsBlocked = callback => {
+    fetch(REQUEST_URL, REQUEST_CONFIG)
+      .then(response => {
+        callback(response.redirected);
+      })
+      .catch(() => {
+        callback(true);
+      });
   };
 
   useEffect(() => {
-    detectAdBlock();
+    checkAdsBlocked(adsBlocked => {
+      setAdblock(adsBlocked);
+    });
   }, []);
 
   return (

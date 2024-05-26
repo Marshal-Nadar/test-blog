@@ -5,7 +5,6 @@ const Singleblog = () => {
   return (
     <div>
       <header>
-        {/* <h1># POST 1</h1> */}
         <br />
         <h1 className='heading'>Exploring SquareX:</h1>
       </header>
