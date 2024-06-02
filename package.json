@@ -8,12 +8,10 @@
     "build:dev": "env-cmd -f .env.dev next build",
     "build:prod": "env-cmd -f .env.prod next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "@next/third-parties": "^14.2.3",
-    "adblock-detector": "^2.1.0",
     "env-cmd": "^10.1.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
